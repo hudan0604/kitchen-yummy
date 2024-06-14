@@ -1,0 +1,10 @@
+<div
+  [ngStyle]="{ height: dimensions()['height'], width: dimensions()['width'] }"
+  class="imgWraper"
+>
+  <img
+    [src]="recipe().url"
+    alt=""
+    [ngStyle]="{ height: dimensions()['height'], width: dimensions()['width'] }"
+  />
+</div>

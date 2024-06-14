@@ -1,0 +1,11 @@
+@for(categoryItems of data | keyvalue; track categoryItems.key) {
+<div class="category">{{ categoryItems.key | titlecase }}</div>
+@for(recipe of categoryItems.value; track recipe.url) {
+<div class="recipe__wraper">
+  <div class="body__title">{{ recipe.title }}</div>
+  <kitcheyummy-recipe-card
+    [recipe]="recipe"
+    [dimensions]="{ width: '200px', height: '200px' }"
+  ></kitcheyummy-recipe-card>
+</div>
+} }

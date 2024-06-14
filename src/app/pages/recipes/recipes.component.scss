@@ -1,0 +1,20 @@
+.category {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.recipe__wraper {
+  width: fit-content;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 12px;
+
+  .body__title {
+    font-weight: 600;
+  }
+}
